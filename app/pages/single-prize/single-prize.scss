@@ -1,0 +1,19 @@
+.single-prize {
+	ion-label {
+		margin: 0;
+	}
+	ion-row {
+		padding: 0;
+	}
+	.name {
+		position: absolute;
+		top: 50%;
+		transform: translate(0%, -50%);
+	}
+	.point {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

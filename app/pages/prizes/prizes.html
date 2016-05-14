@@ -1,0 +1,20 @@
+<ion-navbar *navbar>
+	<ion-title>Prizes</ion-title>
+</ion-navbar>
+
+<ion-content padding class="prizes">
+	<div class="wrapper">
+		<ion-row *ngFor="#row of rows">
+			<ion-col width-50 *ngFor="#item of items | slice:(row*2):(row+1)*2">
+				<div class="box">
+					<a (click)="itemTapped(item)">
+						<img class="pure-img" src="{{item.bg}}">
+						<p style="color:#fff">
+							{{item.title}}
+						</p>
+					</a>
+				</div>
+			</ion-col>
+		</ion-row>
+	</div>
+</ion-content>
